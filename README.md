@@ -3,7 +3,7 @@
 
 **Python ADK as MCP Client using Gemini LLM as travel planning assistant**
 
-A modular travel agent system built with Python, designed to orchestrate flight search, airport info, trip inspiration, and trip purpose using multiple agents and services. The project integrates with Amadeus APIs and supports MCP (Model Context Protocol) server and ADK (Agent Development Kit) workflows.
+A modular travel agent system built with Python, designed to orchestrate flight search, airport infomation, trip inspiration, and trip purpose using multiple agents and services. The project integrates with Amadeus APIs and supports MCP (Model Context Protocol) server and ADK (Agent Development Kit) workflows.
 
 ## Cloud Environment
 This project is primarily developed to run directly in **Google Cloud** for seamless integration with Google Cloud resources. Usage of a Google API key or Google APIs in other environments is not supported by default. If you wish to run the project outside GCP and require Google API integration, you must implement those changes and update the environment variables yourself.
@@ -50,7 +50,7 @@ smart-trip-planner/
 ## Setup
 1. **Clone the repository**
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/suhas-shivakumar/smart-trip-planner.git
    cd main-travel-agent
    ```
 2. **Install dependencies**
