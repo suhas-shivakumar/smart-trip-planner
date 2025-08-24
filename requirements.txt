@@ -1,0 +1,9 @@
+# Core dependencies
+requests
+requests-oauthlib
+oauthlib
+python-dotenv
+pydantic
+amadeus
+mcp
+uvicorn
