@@ -1,7 +1,7 @@
-# Samrt Trip Planner
+# Smart Trip Planner
 ![Agent Interaction Demo](static/adk_agent_interaction.gif)
 
-Python ADK as MCP Client using Gemini LLM as travel planning assistant
+**Python ADK as MCP Client using Gemini LLM as travel planning assistant**
 
 A modular travel agent system built with Python, designed to orchestrate flight search, airport info, trip inspiration, and trip purpose using multiple agents and services. The project integrates with Amadeus APIs and supports MCP (Model Context Protocol) server and ADK (Agent Development Kit) workflows.
 
@@ -11,7 +11,7 @@ This project is primarily developed to run directly in **Google Cloud** for seam
 **Note:** The repository does not provide built-in support for Google API key usage. Any such integration must be added by the user as needed.
 
 ## Features
-- Modular agent architecture (airport, inspiration, search, trip purpose, smart trip)
+- Modular agent architecture (airport, inspiration, search, trip purpose)
 - Amadeus API integration for flight and airport data
 - MCP server support for context-driven agent orchestration
 - ADK support for agent development and testing
@@ -76,14 +76,14 @@ ADK (Agent Development Kit) is used for developing and testing agents independen
    ```sh
    pip install google-adk
    ```
-2. **Run an agent using ADK:**
-   Navigate to the agent directory and run:
+2. **Run the agent using ADK:**
+   From the root directory run:
    ```sh
-   python -m smart_trip_agent.agent
+   adk web
    ```
-   Or for sub-agents:
+   Or for individual agents go to agents folder and run:
    ```sh
-   python -m smart_trip_agent.sub_agents.flight_search.agent
+   adk web
    ```
 - You can run agents in isolation for development and debugging.
 - MCP server and ADK agent runners do not interfere with each other.
