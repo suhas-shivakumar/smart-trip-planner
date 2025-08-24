@@ -51,7 +51,7 @@ smart-trip-planner/
 1. **Clone the repository**
    ```sh
    git clone https://github.com/suhas-shivakumar/smart-trip-planner.git
-   cd main-travel-agent
+   cd smart-trip-planner
    ```
 2. **Install dependencies**
    ```sh
