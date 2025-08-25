@@ -164,7 +164,7 @@ class TravelAgentService:
             return format_trip_purpose_response(trip_purpose_response, arguments)
 
         except ResponseError as e:
-            return {"error": f"Tripo purpose API Error: {str(e)}", "details": e.args}
+            return {"error": f"Trip purpose API Error: {str(e)}", "details": e.args}
         except Exception as e:
             return {"error": f"An unexpected error occurred: {str(e)}"}
 
