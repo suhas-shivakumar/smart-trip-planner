@@ -20,7 +20,7 @@ This project is primarily developed to run directly in **Google Cloud** for seam
 
 ## Project Structure
 ```
-smart-trip-planner/
+smart-trip-planner-agent/
 ├── agents/
 │   ├── airport_agent/
 │   ├── inspiration_agent/
