@@ -1,4 +1,9 @@
 # Smart Trip Planner
+
+## Chatbot Interaction Demo
+![Chatbot Interaction Demo](static/adk_agent_interaction.gif)
+
+## ADK Agent Interaction Demo
 ![Agent Interaction Demo](static/adk_agent_interaction.gif)
 
 **Python ADK as MCP Client using Gemini LLM as travel planning assistant**
@@ -39,8 +44,9 @@ smart-trip-planner-agent/
 │   │   ├── inspiration/
 │   │   ├── trip_purpose/
 ├── utils/
-│   ├── custom_formatter.py
-│   ├── token.py
+├── static/
+├── templates/
+├── chatbot_app.py
 ├── server.py
 ├── requirements.txt
 ├── .env.example
@@ -68,6 +74,26 @@ python server.py
 ```
 - Ensure your `.env` is configured for MCP and Amadeus API access.
 - The server will expose endpoints for agent orchestration and API integration.
+
+## Running the FastAPI Chatbot
+The FastAPI chatbot provides a web-based chat UI for interacting with the Smart Trip Agent.
+
+1. **Install FastAPI and Uvicorn (if not already installed):**
+   ```sh
+   pip install fastapi uvicorn jinja2
+   ```
+2. **Start the FastAPI server:**
+   ```sh
+   uvicorn chatbot_app:app --reload --port 9000
+   ```
+3. **Open your browser and go to:**
+   [http://localhost:9000](http://localhost:9000)
+
+You can now interact with the travel planner agent via the web chat interface.
+
+**Note:**
+- The chat UI is served from `templates/index.html` and uses static assets from the `static/` folder.
+- The backend uses `smart_trip_agent.agent.SmartTripAgent` for agent orchestration.
 
 ## Running ADK Agents Separately
 ADK (Agent Development Kit) is used for developing and testing agents independently of the MCP server.
