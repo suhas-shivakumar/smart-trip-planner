@@ -1,7 +1,7 @@
 # Smart Trip Planner
 
 ## Chatbot Interaction Demo
-![Chatbot Interaction Demo](static/adk_agent_interaction.gif)
+![Chatbot Interaction Demo](static/chatbot_interaction.gif)
 
 ## ADK Agent Interaction Demo
 ![Agent Interaction Demo](static/adk_agent_interaction.gif)
