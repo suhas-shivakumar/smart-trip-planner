@@ -1,14 +1,23 @@
 # Smart Trip Planner
 
+## FastAPI Chatbot powered by ADK Agent, MCP Server, and Gemini LLM for intelligent travel planning
+
+An intelligent, modular travel planner built with Python. The system combines a FastAPI chatbot web interface, an ADK agent powered by Gemini LLM, and an MCP (Model Context Protocol) server for context management and agent orchestration. Users interact with the chatbot, which routes requests to the ADK agent (`SmartTripAgent`) and its sub-agents for airport info, flight search, inspiration, and trip purpose. The MCP server enables multi-turn, context-aware conversations and seamless integration with Amadeus APIs for real-time travel data.
+
 ## Chatbot Interaction Demo
+**FastAPI chatbot using ADK Agent & MCP Server**
+
+The FastAPI chatbot provides a web interface for travel planning by connecting to an ADK agent and MCP server. User messages are sent to the ADK agent (`SmartTripAgent`), which uses sub-agents and the Gemini LLM to generate responses. The MCP server manages context and agent orchestration, enabling intelligent, multi-turn conversations for trip planning.
+
 ![Chatbot Interaction Demo](static/chatbot_interaction.gif)
 
 ## ADK Agent Interaction Demo
-![Agent Interaction Demo](static/adk_agent_interaction.gif)
-
 **Python ADK as MCP Client using Gemini LLM as travel planning assistant**
 
 A modular travel agent system built with Python, designed to orchestrate flight search, airport infomation, trip inspiration, and trip purpose using multiple agents and services. The project integrates with Amadeus APIs and supports MCP (Model Context Protocol) server and ADK (Agent Development Kit) workflows.
+
+![Agent Interaction Demo](static/adk_agent_interaction.gif)
+
 
 ## Cloud Environment
 This project is primarily developed to run directly in **Google Cloud** for seamless integration with Google Cloud resources. Usage of a Google API key or Google APIs in other environments is not supported by default. If you wish to run the project outside GCP and require Google API integration, you must implement those changes and update the environment variables yourself.
