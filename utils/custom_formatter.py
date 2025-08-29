@@ -148,11 +148,11 @@ def format_inspiration_flights_response(result, origin_airport_code):
         for data in result["data"]:
             output.append(
                 {
-                    "origin": f"{locations.get(data.get("origin", "")).get("detailedName", "")} ({data.get("origin", "")})",
-                    "destination": f"{locations.get(data.get("destination", "")).get("detailedName", "")} ({data.get("destination", "")})",
-                    "departureDate": f"{data.get("departureDate", "")}",
-                    "returnDate": f"{data.get("returnDate", "")}",
-                    "price": f"{data.get("price", "").get("total", "")}",
+                    "origin": f"{locations.get(data.get('origin', '')).get('detailedName', '')} ({data.get('origin', '')})",
+                    "destination": f"{locations.get(data.get('destination', '')).get('detailedName', '')} ({data.get('destination', '')})",
+                    "departureDate": f"{data.get('departureDate', '')}",
+                    "returnDate": f"{data.get('returnDate', '')}",
+                    "price": f"{data.get('price', '').get('total', '')}",
                 }
             )
 
