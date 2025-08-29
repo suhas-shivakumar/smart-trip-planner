@@ -1,4 +1,5 @@
-# Core dependencies
+google-adk
+google-genai
 requests
 requests-oauthlib
 oauthlib
