@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  smart-trip-app:
+    build: .
+    container_name: smart-trip-planner
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    image: smart-trip-app-local
+    # If you want to use start_services.sh, uncomment below:
+    # entrypoint: ["bash", "start_services.sh"]
+    # If you use supervisord, the Dockerfile CMD will handle it
