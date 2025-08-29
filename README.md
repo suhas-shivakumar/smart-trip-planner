@@ -123,6 +123,34 @@ ADK (Agent Development Kit) is used for developing and testing agents independen
 - You can run agents in isolation for development and debugging.
 - MCP server and ADK agent runners do not interfere with each other.
 
+## Dockerfile Usage
+
+You can build and run the project using Docker or Docker Compose for easy deployment and local testing.
+
+### Build the Docker image (standalone)
+```sh
+docker build -t smart-trip-planner .
+```
+
+### Run the Docker container (standalone)
+```sh
+docker run --env-file .env -p 8000:8000 smart-trip-planner
+```
+
+### Using Docker Compose
+Build and start the service with:
+```sh
+docker-compose up --build
+```
+Or to run in detached mode:
+```sh
+docker-compose up -d --build
+```
+
+This will start the FastAPI chatbot (and MCP server if configured) inside the container. Access the app at [http://localhost:8000](http://localhost:8000).
+
+If you use a process manager (like `supervisord`), both services will run together. See the Dockerfile, `start_services.sh`, and `docker-compose.yml` for details.
+
 ## Environment Variables
 See `.env.example` for all required variables:
 - `GOOGLE_CLOUD_PROJECT`, `AMADEUS_CLIENT_ID`, `AMADEUS_CLIENT_SECRET`
