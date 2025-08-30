@@ -4,7 +4,6 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import os
 
-# Import the travel planner agent
 from smart_trip_agent.agent import SmartTripAgent
 
 app = FastAPI()
@@ -31,7 +30,6 @@ async def chat(request: Request):
     user_message = data.get("message")
     session_id = data.get("session_id")  # Can be None for a new conversation
     try:
-        # Directly call the travel planner agent
         agent_response_data = await smart_trip.get_response(user_message, session_id)
         return JSONResponse(agent_response_data)
     except Exception as e:
